@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+  }
+
+  .logo {
+    width: 70px;
+    margin-left: 20px;
+  }
+
+  .nav {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+  }
+
+  .nav li {
+    margin: 0 10px;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+
+  .nav a:hover {
+    color: #81c4ff;
+    border-bottom: 2px solid #81c4ff ;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .about-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .about-text {
+    width: 600px;
+    margin-left: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .about-text p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+   @media screen and (max-width: 768px) {
+      .main {
+          flex-direction : column; /* Stack the image and text vertically on small screens */
+      }
+      
+      .about-image, .about-text {
+          width :100%; /* Make the image and text take the full width on small screens */
+          margin :10px; 
+      }
+      
+      .header {
+          justify-content:center; /* Center the header content on small screens */
+      }
+      
+      .about-text h2, .about-text p {
+          font-size :16px; /* Reduce the font size on small screens */
+      }
+      
+      .container {
+          max-width :600px; /* Reduce the container width on small screens */
+      }
+      
+      body {
+          font-size :12px; /* Reduce the body font size on small screens */
+      }
+      
+   }
+  
+  
+
+  
+  

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,900&family=Raleway&family=Rock+Salt&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+  }
+
+  .navbar-logo {
+    width: 70px;
+    margin-left: 20px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+  }
+
+  .navbar-menu li {
+    margin: 0 10px;
+  }
+
+  .navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+
+  .navbar-menu a:hover {
+    color: #519fd7;
+    border-bottom: 2px solid rgb(32, 122, 207);
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 60px;
+    font-family:'Times New Roman';
+  }
+
+  .banner-text p {
+    font-size: 24px;
+    font-family: Rock salt;
+  }
+  
+  .head{
+    color: #81c4ff;
+  }
+
+  

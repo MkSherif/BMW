@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+  }
+
+  .logo {
+    width: 70px;
+    margin-left: 20px;
+  }
+
+  .nav {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+  }
+
+  .nav li {
+    margin: 0 10px;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+
+  .nav a:hover {
+    color: #81c4ff;
+    border-bottom: 2px solid #81c4ff ;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+  }
+
+  .card p {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+  }
+
+  .card a {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    background-color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+      .main {
+          grid-template-columns: repeat(2,1fr);
+      }
+      
+      .header {
+          justify-content:center; /* Center the header content on small screens */
+      }
+      
+      .card h3, .card p, .card a {
+          font-size :14px; /* Reduce the font size on small screens */
+      }
+      
+      .card img {
+          height :200px; /* Reduce the image height on small screens */
+      }
+      
+      .card a {
+          padding :5px; /* Reduce the padding on small screens */
+      }
+      
+      .container {
+          max-width :600px; /* Reduce the container width on small screens */
+      }
+      
+      body {
+          font-size :12px; /* Reduce the body font size on small screens */
+      }
+      
+  }
